@@ -53,7 +53,7 @@ The application will start and listen on the default port (usually https://local
 
 1. **Navigate to the test project directory:**
     ```sh
-    cd HackerNews.Tests
+    cd HackerNews.BusinessLogic.Tests
 
 2. **Run the tests:**
     ```sh

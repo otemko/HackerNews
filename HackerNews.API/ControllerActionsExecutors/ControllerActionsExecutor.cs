@@ -34,7 +34,7 @@ namespace HackerNews.API.ControllerActionsExecutors
                 var result = await func().ConfigureAwait(false);
                 return controller.Ok(result);
             }
-            catch (AppExteranalApiException exception)
+            catch (AppExternalApiException exception)
             {
                 return HandleAppExteranalApiException(controller, exception, callingMethod);
             }
@@ -67,7 +67,7 @@ namespace HackerNews.API.ControllerActionsExecutors
         /// <param name="exception">The exception.</param>
         /// <param name="callingMethod">The calling method.</param>
         /// <returns>An IActionResult.</returns>
-        private IActionResult HandleAppExteranalApiException(ControllerBase controller, AppExteranalApiException exception, string callingMethod)
+        private IActionResult HandleAppExteranalApiException(ControllerBase controller, AppExternalApiException exception, string callingMethod)
         {
             return LogException(controller, callingMethod, exception, StatusCodes.Status500InternalServerError, $"{callingMethod} failed");
         }
