@@ -87,6 +87,9 @@ This will execute all the unit tests and display the results in the terminal.
 * **Environment-Specific Configurations:** Add support for multiple environments (e.g., development, staging, production) with varying configurations such as logging levels, rate-limiting policies, and cache durations, allowing the application to adapt to different deployment contexts.
 
 * **Comprehensive Unit Testing:** Write unit tests to cover all layers of the application (controllers, services, etc.) to ensure correctness and reliability.
+
 * **Documentation:** Ensure that all components are well-documented. Add inline documentation where missing.
+
+* **Warnings:** Fix build warnings.
 
     
